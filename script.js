@@ -25,12 +25,12 @@ const PlayPause = (t) => {
     return actions[action](t);
 }
 const actions = {
-    Play: (t) => {
+    Play: () => {
         let { bttplay } = pegaelemento();
         interval = setInterval(time, 10);
         parar(bttplay);
     },
-    Pause: (t) => {
+    Pause: () => {
         let { bttplay } = pegaelemento();
         clearInterval(interval);
         iniciar(bttplay);
